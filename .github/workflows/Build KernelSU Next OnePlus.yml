@@ -410,7 +410,7 @@ jobs:
           cd ./KernelSU-Next
           patch -p1 --forward < 0001-kernel-implement-susfs-v1.5.8-KernelSU-Next-v1.0.8.patch || true
           patch -p1 --forward < 0001-kernel-implement-susfs-v1.5.8-KernelSU-Next-v1.0.9.patch || true
-          cd ../commom
+          cd ../common
           GKI_V="${{ env.ANDROID_VERSION }}-${{ env.KERNEL_VERSION }}"
           SUBLEVEL=$(grep '^SUBLEVEL *=' Makefile | head -n1 | cut -d= -f2 | tr -d ' ')
 
